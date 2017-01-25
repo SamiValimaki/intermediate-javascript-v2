@@ -135,3 +135,13 @@ function sum(x, y) {
  If both parameters are the same type an the same value return "Exact match".
  If both parameters have the same value but are different types return "Different types"
  Otherwise return "Different values"
+
+       function stuff(x, y) {
+       if(typeof x === typeof y && x === y) {
+         return 'Exact match';
+       } else if(x == y && typeof x !== typeof y) {
+         return 'Different types';
+       } else {
+         return 'Different values';
+       }
+      }
